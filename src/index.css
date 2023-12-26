@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input::placeholder {
+  color: grey;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+input {
+  background-color: rgba(231, 235, 244, 1);
+}
+
+.shadow {
+  box-shadow: 0px 3px 6px 0px rgb(173, 173, 173);
+}
+
+.table-auto {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-auto th {
+  font-weight: 500;
+}
+.table-auto th,
+.table-auto td {
+  padding: 8px;
+  text-align: left;
+}
+
+.table-auto th {
+  background-color: #f2f2f2;
+}
+
+.table-auto tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pagination {
+  padding: 5px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination > span {
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pagination-selected {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.disabled {
+  opacity: 0;
+}
